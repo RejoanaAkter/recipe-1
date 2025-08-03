@@ -82,7 +82,6 @@ export const loginUser = async (req, res) => {
 
 
 
-
 export const getAllUsers = async (req, res) => {
   try {
     const userData = await User.find();
@@ -94,6 +93,7 @@ export const getAllUsers = async (req, res) => {
     res.status(500).json({ errorMessage: error.message });
   }
 };
+
 
 export const getUserById = async (req, res) => {
   try {
